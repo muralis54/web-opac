@@ -1,0 +1,67 @@
+<html>
+    <head>
+    <title></title>
+    <link href="../css/newaccount.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript">
+    function validateform(){
+      var name=document.getElementById("name"); 
+      var date=document.getElementById("d") ;
+      var email=document.getElementById("email");
+      var password=document.getElementById("password");
+      var number=document.getElementById("number");
+      
+      if(name.value==""){
+        alert("Please enter the name");
+        return false;
+      } 
+      else if(date.value==""){
+        alert("Please enter the valid date");
+        return false;
+      }
+      else if(email.value==""){
+        alert("Please enter the valid email address");
+        return false;
+      }
+      else if(password.value==""){
+        alert("Please enter the valiid password");
+        return false;
+      }
+      else if(number.value==""){
+        alert("Please enter the valid number");
+        return false;
+      }
+      
+      else{
+          alert("User Id and Password sent to your email");
+        return true;
+      }
+      
+    }
+  </script>
+  </head>
+  
+  <body>    
+    <center> 
+      <form  onsubmit="return validateform()" action="login.html" >
+      <h2 ><blockquote>Sign UP</blockquote></h2>
+      
+      Name:<br>
+      <input type="text" id="name"><br>
+        
+      D.O.B :&nbsp; 
+      <input style="width: 50;" type="text" id="d" pattern="[0-9]{2}"minlength="2" maxlength="2">
+      <input style="width: 50;" type="text" id="name" pattern="[0-9]{2}"minlength="2" maxlength="2">
+      <input style="width: 50;" type="text" id="name" pattern="[0-9]{2}"minlength="2" maxlength="2"><br>
+      Email:<br>
+      <input  type="email" id="email"><br>
+      Password:<br>
+      <input  type="password" id="password" maxlength="6"><br>
+      Contact Number:<br>
+      <input type="text" id="number" pattern="[0-9]{10}"minlength="10" maxlength="10"><br>
+    
+      <input type="submit" value="submit">
+      </div>
+      </form></center>
+    </body>
+  
+</html>
