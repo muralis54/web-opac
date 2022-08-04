@@ -27,9 +27,9 @@ ul {
 	margin-left: 75%;
 } 
 a:link {
-    color: violet;
+    color: white;
 }
-  
+
 a:visited {
     color: blue;
 }
@@ -41,6 +41,7 @@ a:hover {
 p {
 	margin: 50px;
     font-size: large;
+    text-align: center;
 }
 
 h1 {
@@ -50,3 +51,10 @@ h1 {
 	font-size: 75px;
 	text-shadow: 100px 10px 20px #808080;
 }
+
+footer {
+    text-align: center;
+    padding: 5px;
+    color: black;
+
+  }

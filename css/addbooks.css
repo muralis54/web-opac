@@ -7,7 +7,7 @@ body {
 form{
     background-color: white;
     width: 70%;
-    height: 100p%;
+    height: 100%;
     margin-top: 10%;
     margin-bottom: 10%;
 }
@@ -36,12 +36,12 @@ ul {
     list-style: none;
     padding: 0;
     border: 3px solid cyan;
-	margin-left: 90%;
+	margin-left: 75%;
 } 
 a:link {
-    color: violet;
+    color: white;
 }
-  
+
 a:visited {
     color: blue;
 }
@@ -61,9 +61,9 @@ textarea{
 }
 
 input[type="text"],input[type="email"],input[type="password"]{
-    width: 200px;;
+    width: 300px;
     margin-top:10px;
-    height:45px;
+    height:20px;
     margin-bottom:25px;
     padding:10px;
     border:3px solid #2BC1F2;
@@ -80,5 +80,4 @@ input[type="submit"]{
     font-size:18px;
     font-weight:700;
     cursor:pointer;
-    font-family:'Ubuntu',sans-serif
 }   

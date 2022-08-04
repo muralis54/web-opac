@@ -37,9 +37,9 @@ ul {
 	margin-left: 90%;
 } 
 a:link {
-    color: violet;
+    color: white;
 }
-  
+
 a:visited {
     color: blue;
 }
@@ -47,6 +47,7 @@ a:visited {
 a:hover {
     color: red;
 }
+
 
 textarea{
     width:100%;
