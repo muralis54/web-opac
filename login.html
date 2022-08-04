@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+        <script type="text/javascript">
+            function validate()
+            {   
+                  
+                var email=document.getElementById("email");
+                var password=document.getElementById("p");
+               
+               
+                if(email.value==""){
+                    alert("Please Enter the valid User Id");
+                    return false;}
+                else if(password.value==""){
+                    alert("Please Enter the valid password");
+                    return false;}
+                    
+                
+                    else {
+                        true;
+                    }
+                
+            }
+            </script>
+    </head>
+    <body >
+        <center>
+            <form onsubmit="return validate()" action="home.html">
+                
+                <center> <h1>OPAC</h1></center><hr>
+                
+                <blockquote><h3>User Id</h3></blockquote> 
+                <input type="text" id="email" placeholder="Enter User ID">
+                
+                <blockquote><h3>password</h3></blockquote> 
+                <input type="password" id="p" minlength="6" maxlength="6" placeholder="Enter the password"><br><br>
+                <h3>create new account <button ><a href="newaccount.html" class="button12"> Click</a></button> </h3>
+                <input type="submit" value="Login" >
+            </form>
+        </center>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>OPAC</title>
+      <link rel="stylesheet" type="text/css" href="css/search.css">
+   </head>
+   <body>
+      <ul>
+         <a href="home.html"><li><center>Home</center></li></a>
+         <a href="addbooks.html"><li><center>Add Books</center></li></a>
+         <a href="search.html"><li><center>Search</center></li></a>
+         <a href="login.html"><li><center>Logout</center></li></a>
+     </ul>
+      <h1>OPAC</h1>
+      
+      <form >
+         <div class="center"><input class="search" type="text" value="" name="search" placeholder="Please enter any keyword"></div>
+         <br><br>
+         <div class="center"><input type="text" name="ps" list="case-numbers1" placeholder="Items" style="font-size:25px;"></div>
+         <datalist id="case-numbers1">
+            <option value="20">few</option>
+            <option value="50">medium</option>
+            <option value="100">large</option>
+            <option value="200">many</option>
+         </datalist>
+         <br><br>
+         <input type="hidden" name="p" value="0">
+         <div class="center"><input class="btn-square" type="submit" value="Search"></div>
+      </form>
+      <br><br>
+      
+      <hr>
+   </body>
+</html>
