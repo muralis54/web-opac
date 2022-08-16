@@ -4,38 +4,36 @@ body {
 	margin: auto;
 }
 
-div {
-    width: 50px;
-    height: 25px;
-    border: 3px solid black;
-    padding: 10px;
-    margin: 10px;
+.flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+    justify-content: space-around;
+    border: black solid 3px;
+    margin-top: 5%;
   }
-
-li {
-    border: 2px solid black;
-    margin: 2px;
-    padding: 12px;
-	width: 100px;
-}
   
-ul {
-    display: inline-flex;
-    list-style: none;
-    padding: 0;
-    border: 3px solid cyan;
-	margin-left: 75%;
-} 
-a:link {
-    color: white;
+a:link >div{
+    color: brown;
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
 }
 
-a:visited {
+a:visited >div{
     color: blue;
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
 }
 
-a:hover {
+a:hover>div {
     color: red;
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
 }
 
 p {
