@@ -1,5 +1,14 @@
+body {
+	max-width: 790px;
+	background-color: #afafaf;
+	margin: auto;
+}
+
 form {
-    width: 400px;
+    align-content: center;
+    margin-left : 10vw;
+    margin-top: 18%;
+    width: 60%;
     background-color: lightblue;
     text-align: center;
     padding: 20px;
