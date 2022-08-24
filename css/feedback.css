@@ -44,3 +44,32 @@ form {
     background-color: white;
     color: blue;
   }
+
+  .topnav {
+    margin-top: 5%;
+    width:auto;
+    background-color: #333;
+    overflow: hidden;
+    
+  }
+
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+.topnav a:active{
+    color: brown;
+    background-color: #f1f1f1;
+    
+}
+
+.topnav a:hover{
+    color: red;
+    background-color: #f1f1f1;
+    
+}

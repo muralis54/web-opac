@@ -43,34 +43,31 @@ hr {
 	width: 780px
 }
 
-.flex-container {
-    display: flex;
-    background-color: DodgerBlue;
-    justify-content: space-around;
-    border: black solid 3px;
+.topnav {
     margin-top: 5%;
+    width:auto;
+    background-color: #333;
+    overflow: hidden;
+    
   }
 
-a:link >div{
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+.topnav a:active{
     color: brown;
     background-color: #f1f1f1;
-    margin: 10px;
-    padding: 20px;
-    font-size: 20px;
+    
 }
 
-a:visited >div{
-    color: blue;
-    background-color: #f1f1f1;
-    margin: 10px;
-    padding: 20px;
-    font-size: 20px;
-}
-
-a:hover>div {
+.topnav a:hover{
     color: red;
     background-color: #f1f1f1;
-    margin: 10px;
-    padding: 20px;
-    font-size: 20px;
+    
 }
