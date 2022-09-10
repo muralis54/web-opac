@@ -40,7 +40,6 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px 0;
-
 }
 
 
@@ -49,6 +48,7 @@ body{
     flex-wrap: wrap;
     width: 50%;
     padding-bottom: 20px;
+    position: relative;
 }
 
 .user-input:nth-child(2n){
@@ -68,8 +68,43 @@ body{
     width: 95%;
     border-radius: 7px;
     outline: none;
-    border: 1px solid grey;
+    border: 3px solid black;
     padding: 0 10px;
+}
+
+.success input{
+    border: 3px solid green;
+}
+
+.success i.fa-check-circle{
+    visibility: visible;
+    color: green;
+}
+
+.error input{
+    border: 3px solid red;
+}
+
+.error i.fa-exclamation-circle{
+    visibility: visible;
+    color: red;
+}
+
+.user-input i{
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+    visibility: hidden;
+}
+
+.user-input p{
+    font-size: 15px;
+    color: red;
+    visibility: hidden;
+}
+
+.error p{
+    visibility: visible;
 }
 
 .gender-title{
@@ -93,7 +128,7 @@ body{
 
 .gender-category label,
 .gender-category input,
-.form-submit input{
+.form-submit button{
     cursor: pointer;
 }
 
@@ -101,7 +136,7 @@ body{
     margin-top: 40px;
 }
 
-.form-submit input{
+.form-submit button{
     display: block;
     width: 100%;
     font-size: 20px;
