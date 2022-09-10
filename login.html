@@ -2,47 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="css/login.css">
-        <script type="text/javascript">
-            function validate()
-            {   
-                  
-                var email=document.getElementById("email");
-                var password=document.getElementById("p");
-               
-               
-                if(email.value==""){
-                    alert("Please Enter the valid User Id");
-                    return false;}
-                else if(password.value==""){
-                    alert("Please Enter the valid password");
-                    return false;}
-                    
-                
-                    else {
-                        true;
-                    }
-                
-            }
-            </script>
-    </head>
-    <body >
-        <center>
-            <form onsubmit="return validate()" action="index.html">
-                
-                <center> <h1>OPAC</h1></center><hr>
-                
-                <blockquote><h3>User Id</h3></blockquote> 
-                <input type="text" id="email" placeholder="Enter User ID">
-                
-                <blockquote><h3>password</h3></blockquote> 
-                <input type="password" id="p" minlength="6" maxlength="6" placeholder="Enter the password"><br><br>
-                <h3>create new account <button ><a href="newaccount.html" class="button12"> Click</a></button> </h3>
-                <input type="submit" value="Login" >
-            </form>
-        </center>
-    </body>
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <h1 class="form-title">Login</h1>
+        <form id="Login_form" action="index.html" method="post">
+            <div class="main-user">
+                <div class="user-input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Email"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p>Error Message</p>
+                </div>
+                <div class="user-input">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter Password"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p>Error Message</p>
+                </div>
+            </div>
+            <div class="signup">
+                <label for="signup">Sign Up!</label>
+                <input type="button" id="signup" name="signup" value="Register" onclick="window.location.href='Registration.html';">
+            </div>
+            <div class="form-submit">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+ 
+</body>
 </html>
