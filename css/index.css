@@ -9,7 +9,6 @@ body {
     width:auto;
     background-color: #333;
     overflow: hidden;
-    
   }
 
   .topnav a {
@@ -53,3 +52,11 @@ footer {
     color: black;
 
   }
+
+@media (max-width: 600px) {
+    img{
+      width: 450px;
+      overflow: hidden;
+      padding: 10px 16px;
+    }
+}
