@@ -1,45 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
-	max-width: 790px;
-	background-color: #afafaf;
-	margin: auto;
+	display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #afafaf;
+    background-size: cover;
 }
 
-form{
-    background-color: white;
-    width: 70%;
-    height: 100%;
-    margin-top: 10%;
-    margin-bottom: 10%;
+.container{
+    width: 100%;
+    max-width: 700px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+    box-shadow: inset --2px 2px 2px white;
+
 }
 
-h1 {
-	text-decoration: underline;
-	margin: 50px;
-	text-align: center;
-	font-size: 75px;
-	text-shadow: 100px 10px 20px #808080;
+.form-title{
+    font-size: 26px;
+    font-weight:  600;
+    text-align: center;
+    padding-bottom: 10px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
 }
 
-h3{
-    color: rgb(0, 255, 255);
+.main-user{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
 }
+
+
+.user-input{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.user-input:nth-child(2n){
+    justify-content: end;
+}
+
+.user-input label{
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.user-input input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 3px solid black;
+    padding: 0 10px;
+}
+
+.success input{
+    border: 3px solid green;
+}
+
+.success i.fa-check-circle{
+    visibility: visible;
+    color: green;
+}
+
+.error input{
+    border: 3px solid red;
+}
+
+.error i.fa-exclamation-circle{
+    visibility: visible;
+    color: red;
+}
+
+.user-input i{
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+    visibility: hidden;
+}
+
+.user-input p{
+    font-size: 15px;
+    color: red;
+    visibility: hidden;
+}
+
+.error p{
+    visibility: visible;
+}
+
+.form-submit button{
+    cursor: pointer;
+}
+.form-submit{
+    margin-top: 40px;
+}
+
+.form-submit button{
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    background-color: aquamarine;
+}
+
 
 .topnav {
     margin-top: 5%;
     width:auto;
     background-color: #333;
     overflow: hidden;
-    
-  }
+}
 
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
-  }
+.topnav a {
+float: left;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 20px;
+}
 
 .topnav a:active{
     color: brown;
@@ -63,24 +162,26 @@ textarea{
     resize:none
 }
 
-input[type="text"],input[type="email"],input[type="password"]{
-    width: 300px;
-    margin-top:10px;
-    height:20px;
-    margin-bottom:25px;
-    padding:10px;
-    border:3px solid #2BC1F2;
-    text-align: left;
-    margin-left: 3%;
-}
+@media (max-width: 600px) {
+    .container{
+        min-width: 200px;
+    }
+    
+    .user-input{
+        margin-bottom: 12px;
+        width: 100%;
+    }
 
-input[type="submit"]{
-    width:100%;
-    padding:10px 45px;
-    background-color:#2BC1F2;
-    border:none;
-    color:#fff;
-    font-size:18px;
-    font-weight:700;
-    cursor:pointer;
-}   
+    .user-input:nth-child(2n){
+        justify-content: space-between;
+    }
+
+    
+    .main-user{
+        max-height: 400px;
+        overflow: auto;
+    }
+    .main-user::-webkit-scrollbar{
+        width:0;
+    }
+}
