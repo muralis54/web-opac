@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedback</title>
-    <link rel="stylesheet" href="css/feedback.css" type="text/css">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/feedback.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <header>
@@ -19,23 +22,47 @@
             <a href="login.html"><i class="fa fa-fw fa-user"></i>Log Out</a>
         </div>
     </header>
-    <form action="" method="POST">
-        <label for="fullName">Your Name</label> <br>
-        <input type="text" name="fullName" placeholder="Enter your name"><br><br>
-    
-        <label for="gender">Your Gender</label> <br>
-        <input type="radio" name="gender" value="male">Male<br>
-        <input type="radio" name="gender" value="female">Female<br><br>
-    
-        <label for="email" >Your E-mail </label> <br>
-        <input type="text" name="email" placeholder="Enter your E-mail"><br>
-        <br>
-    
-        <label for="comments">Your Comments</label> <br>
-        <textarea name="comments" placeholder="Enter your comments"></textarea><br><br>
-    
-        <input type="submit" value="Submit">
-        <input type="reset" value="Clear">
-    </form>
+    <div class="container">
+        <h1 class="form-title">Feedback</h1>
+        <form id="Registration_form" action="index.html" method="post">
+            <div class="main-user">
+                <div class="user-input">
+                    <label for="fullname">First Name</label><br>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter Full Name"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p>Error Message</p>
+                </div>
+                <div class="user-input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Email"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p>Error Message</p>
+                </div>
+                <div class="user-input">
+                    <label for="comment">Enter your comments</label>
+                    <textarea id="comment" name="comment" rows="4" cols=""></textarea>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p>Error Message</p>
+                </div>
+            </div>
+            <div class="gender-detail">
+                <span class="gender-title">Gender</span>
+                <div class="gender-category">
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="other">
+                    <label for="other">Other</label>
+                </div>
+            </div>
+            <div class="form-submit">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
