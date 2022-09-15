@@ -14,110 +14,108 @@
   </head>
   
   <body>    
-    <header>
-      <div class="topnav">
-          <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
-          <a href="addbooks.html"><i class="fa fa-fw fa-book"></i>Add Books</a>
-          <a href="search.html"><i class="fa fa-fw fa-search"></i>Search</a>
-          <a href="feedback.html"><i class="fa fa-fw fa-feed"></i>Feedback</a>
-          <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
-          <a href="login.html"><i class="fa fa-fw fa-user"></i>Log Out</a>
+    
+  <div class="container">
+    <div class="topnav">
+      <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+      <a href="addbooks.html"><i class="fa fa-fw fa-book"></i>Add Books</a>
+      <a href="search.html"><i class="fa fa-fw fa-search"></i>Search</a>
+      <a href="feedback.html"><i class="fa fa-fw fa-feed"></i>Feedback</a>
+      <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+      <a href="login.html"><i class="fa fa-fw fa-user"></i>Log Out</a>
+    </div>
+    <h1 class="form-title">Add Books</h1>
+    <form id="Add_books_form" action="index.html" method="post">
+      <div class="main-user">
+          <div class="user-input">
+            <label for="title">Title</label><br>
+            <input type="text" id="title" name="title" placeholder="Enter Book title"/>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+          </div>
+          <div class="user-input">
+            <label for="isbn">Phone Number</label>
+            <input type="text" id="isbn" name="isbn" placeholder="Enter ISBN of book"/>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+          </div>
+          <div class="user-input">
+            <label for="first_name">Author's First Name</label>
+            <input type="text" id="first_name" name="first_name" placeholder="Enter Author First Name"/>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+          </div>
+          <div class="user-input">
+            <label for="middle_name">Author's Middle Name</label>
+            <input type="text" id="middle_name" name="middle_name" placeholder="Enter Author Middle Name"/>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+          </div>
+          <div class="user-input">
+            <label for="last_name">Author's Last Name</label>
+            <input type="text" id="last_name" name="last_name" placeholder="Enter Author Last Name"/>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+          </div>
+          <div class="user-input">
+            <label for="rating">Rating</label>
+            <input type="number" id="rating" name="rating" placeholder="Select Rating of Book"/>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+          </div>
+          <div class="user-input">
+            <label for="publication">Publication</label>
+            <input type="text" id="publication" name="publication" placeholder="Enter Publication of Book"/>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+          </div>
+          <div class="user-input">
+            <label for="category">Category</label>
+            <input type="text" id="category" name="category" placeholder="Enter Category of Book"/>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+          </div>
+          <div class="user-input">
+            <label for="quantity">Rating</label>
+            <input type="number" id="quantity" name="quantity" placeholder="Select Quantity of Book"/>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+          </div>
+          <div class="user-input">
+            <label for="dop">D.O.P</label>
+            <input type="date" id="dop" name="dop"/>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+          </div>
+          <div class="user-input">
+            <label for="symbol">Symbol</label>
+            <input type="text" id="symbol" name="symbol" placeholder="Select Symbol for price"/>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+          </div>
+          <div class="user-input">
+            <label for="price">Price</label>
+            <input type="number" id="price" name="price" placeholder="Enter price of Book"/>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+          </div>
       </div>
-    </header>
-    <div class="container">
-      <h1 class="form-title">Add Books</h1>
-      <form id="Add_books_form" action="login.html" method="post">
-          <div class="main-user">
-              <div class="user-input">
-                <label for="title">Title</label><br>
-                <input type="text" id="title" name="title" placeholder="Enter Book title"/>
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
-                <p>Error Message</p>
-              </div>
-              <div class="user-input">
-                <label for="isbn">Phone Number</label>
-                <input type="text" id="isbn" name="isbn" placeholder="Enter ISBN of book"/>
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
-                <p>Error Message</p>
-              </div>
-              <div class="user-input">
-                <label for="first_name">Author's First Name</label>
-                <input type="text" id="first_name" name="first_name" placeholder="Enter Author First Name"/>
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
-                <p>Error Message</p>
-              </div>
-              <div class="user-input">
-                <label for="middle_name">Author's Middle Name</label>
-                <input type="text" id="middle_name" name="middle_name" placeholder="Enter Author Middle Name"/>
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
-                <p>Error Message</p>
-              </div>
-              <div class="user-input">
-                <label for="last_name">Author's Last Name</label>
-                <input type="text" id="last_name" name="last_name" placeholder="Enter Author Last Name"/>
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
-                <p>Error Message</p>
-              </div>
-              <div class="user-input">
-                <label for="rating">Rating</label>
-                <input type="number" id="rating" name="rating" placeholder="Select Rating of Book"/>
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
-                <p>Error Message</p>
-              </div>
-              <div class="user-input">
-                <label for="publication">Publication</label>
-                <input type="text" id="publication" name="publication" placeholder="Enter Publication of Book"/>
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
-                <p>Error Message</p>
-              </div>
-              <div class="user-input">
-                <label for="category">Category</label>
-                <input type="text" id="category" name="category" placeholder="Enter Category of Book"/>
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
-                <p>Error Message</p>
-              </div>
-              <div class="user-input">
-                <label for="quantity">Rating</label>
-                <input type="number" id="quantity" name="quantity" placeholder="Select Quantity of Book"/>
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
-                <p>Error Message</p>
-              </div>
-              <div class="user-input">
-                <label for="dop">D.O.P</label>
-                <input type="date" id="dop" name="dop"/>
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
-                <p>Error Message</p>
-              </div>
-              <div class="user-input">
-                <label for="symbol">Symbol</label>
-                <input type="text" id="symbol" name="symbol" placeholder="Select Symbol for price"/>
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
-                <p>Error Message</p>
-              </div>
-              <div class="user-input">
-                <label for="price">Price</label>
-                <input type="number" id="price" name="price" placeholder="Enter price of Book"/>
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
-                <p>Error Message</p>
-              </div>
-          </div>
-          <div class="form-submit">
-              <button type="submit" class="btn">Submit</button>
-          </div>
-      </form>
-      <script src="js/Addbooks.js"></script>
+      <div class="form-submit">
+          <button type="submit" class="btn">Submit</button>
+      </div>
+    </form>
     </div>
   </body>
   
