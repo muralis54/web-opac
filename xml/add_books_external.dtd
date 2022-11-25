@@ -1,0 +1,20 @@
+<!ELEMENT books (book)+>
+<!ELEMENT book (Title,ISBN,Name,Rating,Publisher,Category,Quantity,Date,currency_symbols,Price,Copyright)>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT ISBN (#PCDATA)>
+<!ELEMENT Name (Author_First_Name,Author_Middle_Name,Author_Last_Name)>
+<!ELEMENT Author_First_Name (#PCDATA)>
+<!ELEMENT Author_Middle_Name (#PCDATA)>
+<!ELEMENT Author_Last_Name (#PCDATA)>
+<!ELEMENT Rating (#PCDATA)>
+<!ELEMENT Publisher (#PCDATA)>
+<!ELEMENT Category (#PCDATA)>
+<!ELEMENT Quantity (#PCDATA)>
+<!ELEMENT Date (#PCDATA)>
+<!ELEMENT currency_symbols (#PCDATA)>
+<!ELEMENT Price (#PCDATA)>
+<!ELEMENT Copyright (year,Owner_Name)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT Owner_Name (#PCDATA)>
+
+<!ATTLIST book id CDATA #REQUIRED>

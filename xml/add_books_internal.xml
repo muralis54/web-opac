@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'utf-8'?>
+
+<!DOCTYPE books[ 
+<!ELEMENT books (book)>
+<!ELEMENT book (Title,ISBN,Name,Rating,Publisher,Category,Quantity,Date,currency_symbols,Price,Copyright)>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT ISBN (#PCDATA)>
+<!ELEMENT Name (Author_First_Name,Author_Middle_Name,Author_Last_Name)>
+<!ELEMENT Author_First_Name (#PCDATA)>
+<!ELEMENT Author_Middle_Name (#PCDATA)>
+<!ELEMENT Author_Last_Name (#PCDATA)>
+<!ELEMENT Rating (#PCDATA)>
+<!ELEMENT Publisher (#PCDATA)>
+<!ELEMENT Category (#PCDATA)>
+<!ELEMENT Quantity (#PCDATA)>
+<!ELEMENT Date (#PCDATA)>
+<!ELEMENT currency_symbols (#PCDATA)>
+<!ELEMENT Price (#PCDATA)>
+<!ELEMENT Copyright (year,Owner_Name)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT Owner_Name (#PCDATA)>
+
+]>
+<books>
+    <book>
+        <Title>Percy Jackson</Title>
+        <ISBN>123dsa3f5</ISBN>
+        <Name>
+            <Author_First_Name>Rick</Author_First_Name>
+            <Author_Middle_Name></Author_Middle_Name>
+            <Author_Last_Name>Rioirdian</Author_Last_Name>
+        </Name>
+        <Rating>9</Rating>
+        <Publisher>Potter Publisher</Publisher>
+        <Category>Mystery</Category>
+        <Quantity>5</Quantity>
+        <Date>22.06.2000</Date>
+        <currency_symbols>$</currency_symbols>
+        <Price>100.5</Price>
+        <Copyright>
+            <year>2023</year>
+            <Owner_Name>Sat Groups</Owner_Name>
+        </Copyright>
+    </book>
+</books>

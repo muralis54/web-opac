@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="books">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="book" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Title" type="xs:string" />
+                            <xs:element name="ISBN" type="xs:string" />
+                            <xs:element name="Name">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Author_First_Name" type="xs:string" />
+                                        <xs:element name="Author_Middle_Name" />
+                                        <xs:element name="Author_Last_Name" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Rating" type="xs:string" />
+                            <xs:element name="Publisher" type="xs:string" />
+                            <xs:element name="Category" type="xs:string" />
+                            <xs:element name="Quantity" type="xs:string" />
+                            <xs:element name="Date" type="xs:string" />
+                            <xs:element name="currency_symbols" type="xs:string" />
+                            <xs:element name="Price" type="xs:string" />
+                            <xs:element name="Copyright">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="year" type="xs:string" />
+                                        <xs:element name="Owner_Name" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:integer" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,12 @@
+<!ELEMENT register_form (user+)>
+<!ELEMENT user (full_name,phone_number,DOB,email,password,confirm_password,gender)>
+<!ATTLIST user id NMTOKEN #REQUIRED>
+<!ELEMENT full_name (#PCDATA)>
+<!ELEMENT phone_number (#PCDATA|p1|p2)*>
+<!ELEMENT p1 (#PCDATA)>
+<!ELEMENT p2 (#PCDATA)>
+<!ELEMENT DOB (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT password (#PCDATA)>
+<!ELEMENT confirm_password (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>

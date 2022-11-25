@@ -1,0 +1,5 @@
+<!ELEMENT login (user+)>
+<!ELEMENT user (email,password)>
+<!ATTLIST user id NMTOKEN #REQUIRED>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT password (#PCDATA)>

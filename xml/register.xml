@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<register_form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="register.xsd">
+<user id='1'>
+    <full_name>Murali S</full_name>
+    <phone_number>
+        <p1>7871151617</p1>
+        <p2>8695234505</p2>
+    </phone_number>
+    <DOB>05-04-2001</DOB>
+    <email>vasanthmurali3196@gmail.com</email>
+    <password>sathya2206</password>
+    <confirm_password>sathya2206</confirm_password>
+    <gender>male</gender>
+</user>
+<user id='2'>
+    <full_name>Sathya M</full_name>
+    <phone_number>6383235037</phone_number>
+    <DOB>22-06-2000</DOB>
+    <email>sathya2206@gmail.com</email>
+    <password>sathya@2206</password>
+    <confirm_password>sathya@2206</confirm_password>
+    <gender>female</gender>
+</user>
+</register_form>

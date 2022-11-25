@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'utf-8'?>
+
+<books  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="add_books.xsd">
+    <book id="1">
+        <Title>Percy Jackson</Title>
+        <ISBN>123dsa3f5</ISBN>
+        <Name>
+            <Author_First_Name>Rick</Author_First_Name>
+            <Author_Middle_Name></Author_Middle_Name>
+            <Author_Last_Name>Rioirdian</Author_Last_Name>
+        </Name>
+        <Rating>9</Rating>
+        <Publisher>Potter Publisher</Publisher>
+        <Category>Mystery</Category>
+        <Quantity>5</Quantity>
+        <Date>22.06.2000</Date>
+        <currency_symbols>$</currency_symbols>
+        <Price>100.5</Price>
+        <Copyright>
+            <year>2023</year>
+            <Owner_Name>Sat Groups</Owner_Name>
+        </Copyright>
+    </book>
+    <book id='2'>
+        <Title>Harry Potter</Title>
+        <ISBN>123dsa3f5</ISBN>
+        <Name>
+            <Author_First_Name>Rick</Author_First_Name>
+            <Author_Middle_Name></Author_Middle_Name>
+            <Author_Last_Name>Rioirdian</Author_Last_Name>
+        </Name>
+        <Rating>9</Rating>
+        <Publisher>Potter Publisher</Publisher>
+        <Category>Mystery</Category>
+        <Quantity>5</Quantity>
+        <Date>22.06.2000</Date>
+        <currency_symbols>£</currency_symbols>
+        <Price>10.2</Price>
+        <Copyright>
+            <year>2023</year>
+            <Owner_Name>Sat Groups</Owner_Name>
+        </Copyright>
+    </book>
+</books>

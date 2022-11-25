@@ -1,0 +1,11 @@
+<?xml-stylesheet href="login.xsl" type="text/xsl"?>
+<login>
+    <user id='1'>
+        <email>vasanthmurali3196@gmail.com</email>
+        <password>sathya2206</password>
+    </user>
+    <user id='2'>
+        <email>sathya2206@gmail.com</email>
+        <password>sathya@2206</password>
+    </user>
+</login>
