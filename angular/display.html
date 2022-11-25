@@ -1,0 +1,57 @@
+@{
+    ViewBag.Title = "AngualarJs Tutorial";
+}
+<style>
+    .odd {
+        background-color: antiquewhite;
+        color: #008b8b;
+    }
+
+    td th {
+        height: 30px;
+        min-width: 100px;
+    }
+
+    thead {
+        background-color: darkgray;
+        color: white;
+        height: 30px;
+    }
+</style>
+<h2>AngualarJs Tutorial</h2>
+<fieldset style="width:90%">
+    <legend>Read Json file</legend>
+    <div ng-app="mvcapp" ng-controller="AngularController"> 
+        <table>
+            <tr>
+                <th>S.No.</th>
+                <th>Name </th>
+                <th>Phone </th>
+                <th>Department</th>
+                <th>Salary</th>
+                <th>Image</th>
+                <th>Email</th></tr>
+            <tr ng-repeat="emp in employees">
+                <td>{{$index+1}}</td>
+                <td>{{emp.Name}}</td>
+                <td>{{emp.Phone }}</td>
+                <td>{{emp.Department}}</td>
+                <td>{{emp.Salary }}</td>
+                <td><img ng-src="{{emp.ImagePath || 'images/image.jpg'}}" alt="" title="{{emp.Name}}" width="150" height="150" /></td>
+                <td>{{emp.EmailId ||'email not available' }}</td>
+            </tr>
+        </table>
+    </div>
+</fieldset>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script>
+    var angular = angular.module('mvcapp', []);
+    angular.controller('AngularController', function ($scope, $http) {
+        // $http.get('http://www.articlemirror.in/json/empjson.json').success(function (data)
+
+        $http.get('/json/empjson.txt').success(function (data) {
+            $scope.employees = data;
+        });
+    });
+</script>

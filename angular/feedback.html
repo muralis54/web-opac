@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback</title>
+  <script src="//code.angularjs.org/snapshot/angular.min.js"></script>
+</head>
+<body ng-app="formExample">
+  <div style="text-align:center; color:blue">
+    <h1 class="form-title">Feedback</h1>
+    </div>
+  <div ng-controller="Controller" class="container">
+  <form novalidate class="css-form">
+    <label for="fullname">Fullname: </label>
+    <input type="text" ng-model="user.fullname" required /><br />
+    <label>E-mail: <input type="email" ng-model="user.email" required /></label><br />
+    <label>Comment: <input type="text" ng-model="user.comment" required /></label><br />
+    Gender: <label><input type="radio" ng-model="user.gender" value="male" />male</label>
+    <label><input type="radio" ng-model="user.gender" value="female" />female</label><br />
+    <input type="button" ng-click="reset()" value="Reset" />
+    <input type="submit" ng-click="update(user)" value="Save" />
+  </form>
+  <pre>user = {{user}}</pre>
+  <pre>master = {{master}}</pre>
+</div>
+
+<style type="text/css">
+  .css-form input.ng-invalid.ng-touched {
+    background-color: red;
+  }
+
+  .css-form input.ng-valid.ng-touched {
+    background-color: lightgreen;
+  }
+
+  .css-form label{
+    padding: 12px 12px 12px 0;
+  display: inline-block;
+  }
+
+  .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+
+<script>
+  angular.module('formExample', [])
+    .controller('Controller', ['$scope', function($scope) {
+      $scope.master = {};
+
+      $scope.update = function(user) {
+        $scope.master = angular.copy(user);
+      };
+
+      $scope.reset = function() {
+        $scope.user = angular.copy($scope.master);
+      };
+
+      $scope.reset();
+    }]);
+</script>
+</body>
+</html>
