@@ -1,0 +1,20 @@
+{
+   "users": [
+      {
+         "fullname" : "Sathya M",
+         "phonenumber" : "8695234505",
+         "email" : "sathya2206@gmail.com",
+         "dob" : "22-06-2000",
+         "password" : "sathya2206",
+         "gender" : "Female"
+      },
+      {
+         "fullname" : "Murali S",
+         "phonenumber" : "7871151617",
+         "email" : "vasanthmurali3196@gmail.com",
+         "dob" : "05-04-2001",
+         "password" : "sathya@2206",
+         "gender" : "Male"
+      }
+   ]
+}
