@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+    background-color: #afafaf;
+    background-size: cover;
+    margin-bottom: 5%;
+  }
+  
+  
+  .topnav {
+    margin-top: 3%;
+    width:auto;
+    background-color: #333;
+    overflow-x:hidden;
+    margin-bottom: 3%;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    justify-content:space-between;
+  }
+  
+  .topnav a:active{
+    color: brown;
+    background-color: #f1f1f1;
+    
+  }
+  
+  .topnav a:hover{
+    color: red;
+    background-color: #f1f1f1;
+      
+  }
+  
+  .container{
+    width: 100%;
+    max-width: 850px;
+    max-height: auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+    box-shadow: inset --2px 2px 2px white;
+  }
+  
+  .form-title{
+    font-size: 26px;
+    font-weight:  600;
+    text-align: center;
+    padding-bottom: 10px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
+  }
+  
+  .main-user{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+    max-height: 350px;
+    overflow: auto;
+  }
+
+  .main-user::-webkit-scrollbar{
+    width:0;
+}
+
+  .user-input{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  
+  .user-input:nth-child(2n){
+    justify-content: end;
+  }
+  
+  .user-input label{
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+  }
+  
+  .user-input input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 3px solid black;
+    padding: 0 10px;
+  }
+  
+  .success input{
+    border: 3px solid green;
+  }
+  
+  .success i.fa-check-circle{
+    visibility: visible;
+    color: green;
+  }
+  
+  .error input{
+    border: 3px solid red;
+  }
+  
+  .error i.fa-exclamation-circle{
+    visibility: visible;
+    color: red;
+  }
+  
+  .user-input i{
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+    visibility: hidden;
+  }
+  
+  .user-input p{
+    font-size: 15px;
+    color: red;
+    visibility: hidden;
+  }
+  
+  .error p{
+    visibility: visible;
+  }
+  
+  .form-submit button{
+    cursor: pointer;
+  }
+  .form-submit{
+    margin-top: 40px;
+  }
+  
+  .form-submit button{
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    background-color: aquamarine;
+  }
+  
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+  
+  
+  textarea{
+    width:100%;
+    border:3px solid #2BC1F2;
+    padding:10px;
+    margin-bottom:25px;
+    margin-top:10px;
+    height:100px;
+    resize:none
+  }
+  
+  @media (max-width: 600px) {
+    .container{
+        min-width: 200px;
+    }
+    
+    .user-input{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+  
+    .user-input:nth-child(2n){
+        justify-content: space-between;
+    }
+  
+    
+    .main-user{
+        max-height: 400px;
+        overflow: auto;
+    }
+    .main-user::-webkit-scrollbar{
+        width:0;
+    }
+  }

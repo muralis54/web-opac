@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Books</title>
+    <link rel="stylesheet" type="text/css" href="css/addbooks.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+</head>
+  
+<body>
+    <div class="container">
+        <div class="topnav">
+          <a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+          <a class="active" href="../views/home.ejs"><i class="fa fa-fw fa-book"></i>Add Books</a>
+          <a href="search.html"><i class="fa fa-fw fa-search"></i>Search</a>
+          <a href="feedback.html"><i class="fa fa-fw fa-feed"></i>Feedback</a>
+          <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+          <a href="login.html"><i class="fa fa-fw fa-user"></i>Log Out</a>
+        </div>
+        <h1 class="form-title">All Books</h1>
+        <table>
+            <tr>
+                <th>Book Name</th>
+                <th>Book Author</th>
+                <th>Book Rating</th>
+                <th>Book Price</th>
+                <th>Book Availability</th>
+                <th>Issue</th>
+                <th>Return</th>
+                <th>Delete</th>
+            </tr>
+            <% data.forEach(element=> { %>
+                <tr>
+                    <td>
+                        <%= element.bookName %>
+                    </td>
+                    <td>
+                        <%= element.bookAuthor %>
+                    </td>
+                    <td>
+                        <%= element.bookRating %>
+                    </td>
+                    <td>
+                        <%= element.bookPrice %>
+                    </td>
+                    <td>
+                        <%= element.bookState %>
+                    </td>
+                    <td>
+                        <form action="/issue" method="post">
+                            <input type="text" style="display: none;" 
+                                name="bookName" 
+                                value="<%= element.bookName %>">
+                            <button type="submit">Issue</button>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="/return" method="post">
+                            <input type="text" style="display: none;" 
+                                name="bookName" 
+                                value="<%= element.bookName %>">
+                            <button type="submit">Return</button>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="/delete" method="post">
+                            <input type="text" style="display: none;" 
+                                name="bookName" 
+                                value="<%= element.bookName %>">
+                            <button type="submit">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+                <% }) %>
+        </table>
+  
+        <h1 class="form-title">Add Books</h1>
+        <form id="Add_books_form" action="/" method="post">
+        <div class="main-user">
+            <div class="user-input">
+                <label for="bookName">Title</label><br>
+                <input type="text" id="bookName" name="bookName" placeholder="Enter Book title"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Error Message</p>
+            </div>
+            <div class="user-input">
+                <label for="isbn">ISBN Number</label>
+                <input type="text" id="isbn" name="isbn" placeholder="Enter ISBN of book"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Error Message</p>
+            </div>
+            <div class="user-input">
+                <label for="first_name">Author's First Name</label>
+                <input type="text" id="first_name" name="first_name" placeholder="Enter Author First Name"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Error Message</p>
+            </div>
+            <div class="user-input">
+                <label for="middle_name">Author's Middle Name</label>
+                <input type="text" id="middle_name" name="middle_name" placeholder="Enter Author Middle Name"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Error Message</p>
+            </div>
+            <div class="user-input">
+                <label for="last_name">Author's Last Name</label>
+                <input type="text" id="last_name" name="last_name" placeholder="Enter Author Last Name"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Error Message</p>
+            </div>
+            <div class="user-input">
+                <label for="bookRating">Rating</label>
+                <input type="number" id="bookRating" name="bookRating" placeholder="Select Rating of Book"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Error Message</p>
+            </div>
+            <div class="user-input">
+                <label for="publication">Publication</label>
+                <input type="text" id="publication" name="publication" placeholder="Enter Publication of Book"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Error Message</p>
+            </div>
+            <div class="user-input">
+                <label for="category">Category</label>
+                <input type="text" id="category" name="category" placeholder="Enter Category of Book"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Error Message</p>
+            </div>
+            <div class="user-input">
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" name="quantity" placeholder="Select Quantity of Book"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Error Message</p>
+            </div>
+            <div class="user-input">
+                <label for="dop">D.O.P</label>
+                <input type="date" id="dop" name="dop"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Error Message</p>
+            </div>
+            <div class="user-input">
+                <label for="symbol">Symbol</label>
+                <input type="text" id="symbol" name="symbol" placeholder="Select Symbol for price"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Error Message</p>
+            </div>
+            <div class="user-input">
+                <label for="bookPrice">Price</label>
+                <input type="number" id="bookPrice" name="bookPrice" placeholder="Enter price of Book"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Error Message</p>
+            </div>
+        </div>
+        <div class="form-submit">
+            <button type="submit" class="btn">Add</button>
+        </div>
+        </form>
+    </div>
+</body>
+  
+</html>

@@ -1,0 +1,73 @@
+body {
+	max-width: 790px;
+	background-color: #afafaf;
+	margin: auto;
+}
+
+h1 {
+	text-decoration: underline;
+	margin: 50px;
+	text-align: center;
+	font-size: 75px;
+	text-shadow: 100px 10px 20px #808080;
+}
+
+
+
+p {
+	margin: 50px;
+	font-size: large;
+}
+
+input.search {
+	text-align: center;
+	width: 600px;
+	padding: 10px 8px;
+	border-radius: 6px;
+	border-top: 1px solid #aaa;
+	border-left: 1px solid #aaa;
+	border-right: 2px solid #aaa;
+	border-bottom: 2px solid #aaa;
+	background-image: none;
+	font-size: 25px;
+}
+
+
+div.center {
+	text-align: center;
+}
+
+
+hr {
+	border: 2px dashed black;
+	width: 780px
+}
+
+.topnav {
+    margin-top: 5%;
+    width:auto;
+    background-color: #333;
+    overflow: hidden;
+    
+  }
+
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+.topnav a:active{
+    color: brown;
+    background-color: #f1f1f1;
+    
+}
+
+.topnav a:hover{
+    color: red;
+    background-color: #f1f1f1;
+    
+}
