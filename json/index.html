@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JSON Test</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table id="myData">
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Author</th>
+      </tr>
+    </table>
+
+    <script>
+      fetch("./categories.json")
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (data) {
+          appendData(data);
+        })
+        .catch(function (err) {
+          console.log("error: " + err);
+        });
+
+      function appendData(data) {
+        var mainContainer = document.getElementById("myData");
+        for (var i = 0; i < data.length; i++) {
+          var row = document.createElement("tr");
+          row.innerHTML = `
+            <td>${data[i].id}</td>
+            <td>${data[i].title}</td>
+            <td>${data[i].author}</td>
+          `;
+          mainContainer.appendChild(row);
+        }
+      }
+    </script>
+  </body>
+</html>

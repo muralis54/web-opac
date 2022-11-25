@@ -1,0 +1,22 @@
+{
+  "result": [
+    {
+      "name": "John",
+      "marks":{
+        "math":"78",
+        "english":"90",
+        "chemistry":"80",
+        "physics":"95"
+      }
+    },
+    {
+      "name": "Mike",
+      "marks":{
+        "math":"67",
+        "english":"86",
+        "chemistry":"80",
+        "physics":"95"
+      }
+    }
+  ]
+}

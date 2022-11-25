@@ -1,0 +1,27 @@
+{
+  "register_form": {
+    "user": [
+      {
+        "full_name": "Murali S",
+        "phone_number": {
+          "p1": 7871151617,
+          "p2": 8695234505
+        },
+        "DOB": "05-04-2001",
+        "email": "vasanthmurali3196@gmail.com",
+        "password": "sathya2206",
+        "confirm_password": "sathya2206",
+        "gender": "male"
+      },
+      {
+        "full_name": "Sathya M",
+        "phone_number": 6383235037,
+        "DOB": "22-06-2000",
+        "email": "sathya2206@gmail.com",
+        "password": "sathya@2206",
+        "confirm_password": "sathya@2206",
+        "gender": "female"
+      }
+    ]
+  }
+}
